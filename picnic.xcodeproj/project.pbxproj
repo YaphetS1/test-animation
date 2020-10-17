@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		B319230B253B2354009AB25F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3192309253B2354009AB25F /* Main.storyboard */; };
 		B319230D253B2355009AB25F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B319230C253B2355009AB25F /* Assets.xcassets */; };
 		B3192310253B2356009AB25F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B319230E253B2356009AB25F /* LaunchScreen.storyboard */; };
+		B3D67BB3253B41C500D2185F /* squish.caf in Resources */ = {isa = PBXBuildFile; fileRef = B3D67BB2253B41C500D2185F /* squish.caf */; };
+		DC80750E579EA5F7927ABA6B /* Pods_picnic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72AAAA09E55115582ED22C2 /* Pods_picnic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B0E0F2D707929A55ADEB37A /* Pods-picnic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-picnic.release.xcconfig"; path = "Target Support Files/Pods-picnic/Pods-picnic.release.xcconfig"; sourceTree = "<group>"; };
+		5D4FCE42FA5DCFF2787472F9 /* Pods-picnic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-picnic.debug.xcconfig"; path = "Target Support Files/Pods-picnic/Pods-picnic.debug.xcconfig"; sourceTree = "<group>"; };
 		B3192300253B2354009AB25F /* picnic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picnic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3192303253B2354009AB25F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3192305253B2354009AB25F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		B319230C253B2355009AB25F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B319230F253B2356009AB25F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3192311253B2356009AB25F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3D67BB2253B41C500D2185F /* squish.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = squish.caf; sourceTree = "<group>"; };
+		F72AAAA09E55115582ED22C2 /* Pods_picnic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_picnic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC80750E579EA5F7927ABA6B /* Pods_picnic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5350C64D180246FDAB2D1622 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D4FCE42FA5DCFF2787472F9 /* Pods-picnic.debug.xcconfig */,
+				5B0E0F2D707929A55ADEB37A /* Pods-picnic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60576D13870AB5D454C035B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72AAAA09E55115582ED22C2 /* Pods_picnic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B31922F7253B2354009AB25F = {
 			isa = PBXGroup;
 			children = (
 				B3192302253B2354009AB25F /* picnic */,
 				B3192301253B2354009AB25F /* Products */,
+				5350C64D180246FDAB2D1622 /* Pods */,
+				60576D13870AB5D454C035B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		B3192302253B2354009AB25F /* picnic */ = {
 			isa = PBXGroup;
 			children = (
+				B3D67BB1253B41C500D2185F /* Sounds */,
 				B3192303253B2354009AB25F /* AppDelegate.swift */,
 				B3192305253B2354009AB25F /* SceneDelegate.swift */,
 				B3192307253B2354009AB25F /* ViewController.swift */,
@@ -67,6 +94,14 @@
 			path = picnic;
 			sourceTree = "<group>";
 		};
+		B3D67BB1253B41C500D2185F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B3D67BB2253B41C500D2185F /* squish.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3192314253B2356009AB25F /* Build configuration list for PBXNativeTarget "picnic" */;
 			buildPhases = (
+				DA24A568565F9388EF75B343 /* [CP] Check Pods Manifest.lock */,
 				B31922FC253B2354009AB25F /* Sources */,
 				B31922FD253B2354009AB25F /* Frameworks */,
 				B31922FE253B2354009AB25F /* Resources */,
+				E9E9971459D1FC935FA0B5F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +164,53 @@
 				B3192310253B2356009AB25F /* LaunchScreen.storyboard in Resources */,
 				B319230D253B2355009AB25F /* Assets.xcassets in Resources */,
 				B319230B253B2354009AB25F /* Main.storyboard in Resources */,
+				B3D67BB3253B41C500D2185F /* squish.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA24A568565F9388EF75B343 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-picnic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9E9971459D1FC935FA0B5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-picnic/Pods-picnic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-picnic/Pods-picnic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-picnic/Pods-picnic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B31922FC253B2354009AB25F /* Sources */ = {
@@ -283,6 +363,7 @@
 		};
 		B3192315253B2356009AB25F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D4FCE42FA5DCFF2787472F9 /* Pods-picnic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picnic.picnic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.picnic.test-animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,6 +383,7 @@
 		};
 		B3192316253B2356009AB25F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B0E0F2D707929A55ADEB37A /* Pods-picnic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,7 +394,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.picnic.picnic;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.picnic.test-animation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
